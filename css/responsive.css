@@ -1,0 +1,426 @@
+/**********************
+ Media Query for Mobile
+***********************/
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imgdesc {
+    height: 400px !important;
+    margin: 20px 0px 0px -10px !important;
+  }
+
+  .imgdesc-man {
+    width: 350px;
+    margin: 120px 80px 0px -20px !important;
+  }
+
+  .desc {
+    margin-left: -100px;
+    margin-top: 80px !important;
+  }
+  .desc h1 {
+    font-size: 1.7rem;
+  }
+
+  #aboutus {
+    position: relative;
+    margin-top: -20px !important;
+  }
+  #aboutus .abtimg {
+    width: 300px;
+    margin-top: 40px !important;
+    transform: rotate(-15deg);
+  }
+  #aboutus .abtimg img {
+    width: 100%;
+  }
+  #aboutus .abtdesc {
+    width: 350px;
+    margin-left: -5px !important;
+  }
+  .prdD .prdDImg {
+    margin-top: 40px;
+    width: 350px;
+    height: 300px;
+    margin-left: -50px;
+  }
+  .prdD .prdDImg #demo {
+    width: 266px;
+    margin-left: 42px;
+    margin-top: 61px;
+    height: 167px;
+  }
+  .prdD .prdDImg #demo img {
+    width: 100%;
+    height: 167px;
+  }
+  .prdD .prdDdesc {
+    width: 300px;
+    margin-left: 20px;
+    transform: translateY(40px);
+  }
+
+  .si-gridx {
+    margin-left: 30px;
+    width: 250px !important;
+    margin-top: 30px;
+  }
+  .si-gridx img {
+    width: 100%;
+  }
+
+  .prdMdesc {
+    width: 400px !important;
+    margin-left: -50px !important;
+  }
+
+  .boxes {
+    width: 250px !important;
+  }
+
+  #contact {
+    background-color: #faf8f8;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  #contact .contactus {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .contactus .contactform {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+  }
+}
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .imgdesc {
+    margin: 100px 0px 0px -150px !important;
+  }
+
+  .imgdesc-man {
+    width: 450px;
+    margin: 120px 80px 0px -130px !important;
+  }
+
+  .desc {
+    margin-left: -100px;
+    margin-top: -40px;
+  }
+  .desc h1 {
+    font-size: 1.7rem;
+  }
+
+  .btn-app-div {
+    width: 320px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .btn-app-div .btn-app {
+    margin-left: 3px;
+  }
+
+  .imgdesc {
+    margin: -20px 0px 0px -100px !important;
+  }
+
+  .imgdesc-man {
+    width: 400px;
+    margin: 120px 40px 0px -40px !important;
+  }
+
+  .desc {
+    margin-left: -60px;
+    margin-top: -10px;
+  }
+  .desc h1 {
+    font-size: 1.7rem;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .imgdesc-man {
+    margin-top: 100px !important;
+    height: 200px !important;
+    margin-left: -20px !important;
+  }
+  .imgdesc-man img {
+    width: 100%;
+  }
+
+  .imgdesc {
+    margin-top: 100px !important;
+    margin-left: 80px !important;
+    height: 300px !important;
+  }
+  .imgdesc img {
+    width: 100%;
+  }
+
+  .desc {
+    width: 250px !important;
+    margin-top: -300px !important;
+    margin-left: 360px !important;
+  }
+  .desc h1 {
+    font-size: 1.8rem !important;
+  }
+  .desc p {
+    font-size: 0.9rem;
+  }
+
+  #banners:after {
+    display: none;
+    left: -220px;
+    bottom: -400px;
+  }
+  #banners:before {
+    display: none;
+    left: -220px;
+    bottom: -400px;
+  }
+
+  #aboutus {
+    position: relative;
+  }
+  #aboutus .abtimg {
+    margin-top: 10px;
+    margin-left: -20px;
+    transform: rotate(-15deg);
+  }
+  #aboutus .abtimg img {
+    width: 100%;
+  }
+  #aboutus .abtdesc {
+    margin-left: 40px;
+  }
+  .prdD .prdDImg {
+    margin-top: 80px;
+    width: 400px;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .prdD .prdDImg #demo {
+    width: 305px;
+    margin-left: 48px;
+    margin-top: 48px;
+    height: 190px;
+  }
+  .prdD .prdDImg #demo img {
+    width: 100%;
+    height: 190px;
+  }
+  .prdD .prdDdesc {
+    width: 500px;
+    margin-left: -10px;
+    transform: translateY(40px);
+  }
+
+  .prdMdesc {
+    margin: 180px auto !important;
+  }
+
+  .si-gridx {
+    margin: -70px auto;
+    width: 300px;
+  }
+  .si-gridx img {
+    width: 100%;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  #contact {
+    background-color: #faf8f8;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  #contact .contactus {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .contactus .contactform {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+  }
+}
+/*
+weird phones like pixel2 iphone 6,7,8 with screen size between 411 and 414
+
+*/
+@media (min-width: 411px) and (max-width: 440px) {
+  .prdD .prdDImg {
+    margin-top: 120px;
+    width: 380px;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .prdD .prdDImg #demo {
+    width: 283px !important;
+    margin-left: 45px !important;
+    margin-top: 55px !important;
+    height: 178px !important;
+  }
+  .prdD .prdDImg #demo img {
+    width: 100%;
+    height: 178px !important;
+  }
+  .prdD .slick-slide img {
+    width: 100%;
+  }
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  #loader-wrapper #loader {
+    top: 50% !important;
+    margin-left: 35% !important;
+  }
+
+  .imgdesc, .imgdesc-man {
+    display: none;
+  }
+
+  .desc {
+    margin: 80px auto !important;
+  }
+
+  #banners:after {
+    display: none;
+    left: -220px;
+    bottom: -400px;
+  }
+  #banners:before {
+    display: none;
+    left: -220px;
+    bottom: -400px;
+  }
+
+  .pip {
+    display: none;
+  }
+
+  #aboutus {
+    position: relative;
+  }
+  #aboutus .abtimg {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #aboutus .abtimg img {
+    width: 100%;
+  }
+  #aboutus .abtdesc {
+    margin-left: 40px;
+  }
+  .prdD .prdDImg {
+    margin-top: 120px;
+    width: 380px;
+    height: 300px;
+    margin-left: 0px;
+  }
+  .prdD .prdDImg #demo {
+    width: 266px;
+    margin-left: 42px;
+    margin-top: 61px;
+    height: 167px;
+  }
+  .prdD .prdDImg #demo img {
+    width: 100%;
+    height: 167px;
+  }
+  .prdD .prdDdesc {
+    width: 500px;
+    margin-left: -10px;
+    transform: translateY(30px);
+  }
+
+  .prdMdesc {
+    margin-left: -10px !important;
+  }
+
+  .si-gridx {
+    margin: 150px auto;
+    width: 300px;
+  }
+  .si-gridx img {
+    width: 100%;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .reasons {
+    margin-top: 40px;
+  }
+
+  .boxes {
+    width: 500px !important;
+    border: none !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    border-radius: 0px !important;
+  }
+
+  .tb {
+    border-top: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  .topr {
+    border-top: 1px solid #ccc !important;
+  }
+
+  #contact {
+    background-color: #faf8f8;
+    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  #contact .contactus {
+    display: flex;
+    justify-content: center;
+  }
+  #contact .contactus .contactform {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .footer {
+    border-radius: none !important;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

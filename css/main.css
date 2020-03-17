@@ -1,0 +1,622 @@
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+  background: #fff;
+  overflow: hidden;
+}
+#loader-wrapper #loader {
+  background: url(../img/loader2.gif);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 40%;
+  /* margin: 40px auto; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: -32px auto 0 auto;
+}
+
+body {
+  font-family: "Lato";
+  word-spacing: 0.1em;
+  font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #00a2ff 100%, #0a3a60 0%);
+  border-radius: 30px;
+}
+
+.contents {
+  text-align: justify;
+}
+
+.mb120 {
+  padding-bottom: 120px;
+}
+
+.mb80 {
+  padding-bottom: 80px;
+}
+
+.heading {
+  color: #0a3a60;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/*****************
+ Shockinflux logo
+******************/
+#logo {
+  height: 60px;
+  width: 70px;
+}
+#logo img {
+  width: 100%;
+}
+
+/****************
+ Navbar Section
+****************/
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 9999999;
+  background: #fff;
+  margin: 0 -15px 0 -15px;
+  padding: 0px -5px 0px !important;
+  border-bottom: 1px solid #ccc;
+}
+.navbar li a {
+  font-size: 0.8em !important;
+}
+.navbar button.navbar-toggler {
+  border: 1px solid #0a3a60;
+  padding: 7px;
+}
+.navbar .menu-icon {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #0a3a60;
+  margin: 5px;
+}
+
+.pip {
+  margin-top: 3px;
+}
+
+/********************
+ Main Banner Section
+*********************/
+.banner button {
+  margin: 5px;
+  font-size: 0.8em;
+  width: 120px;
+  border-radius: 50px;
+}
+.banner .active-btn {
+  background-color: #fff;
+  color: #0A3A60;
+  border: 1px solid #0A3A60;
+}
+.banner .default-btn {
+  background-color: #0A3A60;
+  color: #fff;
+  border: 1px solid #0A3A60;
+}
+.banner .imgdesc-man {
+  margin-top: 60px;
+  height: 400px;
+  background-image: url("../mockup/ShockinfluxMock1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+.banner .imgdesc-man img {
+  width: 100%;
+}
+.banner .imgdesc {
+  width: 300px;
+  margin-top: 10px;
+  height: 500px;
+  animation-duration: 5s;
+  background-image: url("../mockup/Shockinflux_Myne1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+  animation-iteration-count: infinite;
+}
+.banner .imgdesc img {
+  width: 100%;
+}
+.banner .desc {
+  margin-top: 100px;
+  margin-right: 100px;
+}
+
+#banners {
+  color: #fff;
+  text-shadow: 1px 1px 2px #0A3A60;
+  position: relative;
+  background-image: url("../img/bg5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0px -5px 0px !important;
+}
+#banners:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -350px;
+  background-color: #fff;
+  width: 700px;
+  height: 700px;
+  transform: skew(-100deg);
+  border-radius: 50%;
+}
+#banners:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -350px;
+  background-color: #fff;
+  width: 700px;
+  height: 700px;
+  transform: skew(100deg);
+  border-radius: 50%;
+}
+
+/*****************
+ About Us Section
+******************/
+#aboutus {
+  position: relative;
+  background-color: #fff;
+  margin-top: 40px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0px -5px 0px !important;
+}
+#aboutus .abtimg {
+  width: 350px;
+  min-width: 300px;
+  max-width: 500px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+#aboutus .abtimg img {
+  width: 100%;
+}
+#aboutus .abtdesc {
+  width: 450px;
+  margin: 30px;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: -40px;
+}
+#aboutus .abt {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 -10px 0 -10px;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************
+ Products Section
+******************/
+.prdD {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.prdD .prdDImg {
+  margin-top: 120px;
+  width: 500px;
+  height: 300px;
+  min-width: 350px;
+  max-width: 500px;
+  margin-left: -150px;
+  background-image: url("../mockup/laptop1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.prdD .prdDImg #demo {
+  width: 380px;
+  margin-left: 60px;
+  margin-top: 23px;
+  height: 238px;
+}
+.prdD .prdDImg #demo img {
+  width: 100%;
+  height: 238px;
+}
+.prdD .prdDdesc {
+  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: 100px;
+  transform: translateY(120px);
+}
+.prdD .prdDdesc .btn-manage {
+  width: 100px;
+  background-color: #0A3A60;
+  border: 1px solid #0A3A60;
+  padding: 5px;
+  border-radius: 3px;
+}
+.prdD .prdDdesc .btn-manage a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.prdM {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 50px;
+}
+.prdM .prdMImg {
+  width: 300px;
+  min-width: 300px;
+  max-width: 500px;
+}
+.prdM .prdMdesc {
+  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: -150px;
+  margin-top: 20px;
+}
+
+#products {
+  background-color: #f6f9f8;
+  position: relative;
+  margin-top: 100px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0px -15px !important;
+}
+#products:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: 0;
+  top: -60px;
+  transform: rotate(-5deg);
+  height: 120px;
+  background-color: #fff;
+}
+
+.si-gridx {
+  width: 350px;
+  margin-left: 100px;
+  transform: translateY(-40px);
+}
+.si-gridx img {
+  width: 100%;
+}
+
+.btn-app-div {
+  margin-top: 20px;
+  display: inline-block;
+}
+.btn-app-div .btn-app {
+  margin-left: 10px;
+  background-color: #000;
+  padding: 5px;
+  width: 120px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-app-div .btn-app a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/************************
+ Why Shockinflux Section
+*************************/
+#reason {
+  background-color: #fff;
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0px -15px !important;
+}
+#reason .reasons {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+#reason .reasons .boxes {
+  width: 200px;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 10px;
+}
+#reason .reasons .boxes img {
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+}
+#reason .reasons .boxes .contents {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+/* Slider */
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 50%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir=rtl] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/****************
+ Contact Section
+*****************/
+#contact {
+  background-color: #f6f9f8;
+  position: relative;
+  z-index: 2;
+  margin: 0 -15px 0 -15px;
+  padding: 0px -5px 0px !important;
+}
+#contact .contactus {
+  display: flex;
+  justify-content: center;
+}
+#contact .contactus .contactform {
+  width: 70%;
+  background-color: #f6f9f8;
+  padding: 20px;
+}
+#contact .contactus .contactform input {
+  height: 50px;
+}
+#contact .contactus .contactform .form-control-div {
+  border: 1px solid #ccc;
+  min-height: 50px;
+}
+#contact .contactus .contactform .con-btn {
+  background-color: #0a3a60;
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/**********************************
+ Drop shadow effects image fitting
+***********************************/
+.effect1 img, .effect2 img, .effect3 img, .effect4 img, .effect5 img, .effect6 img, .effect7 img, .effect8 img {
+  width: 100%;
+}
+
+/***************
+ Footer Section
+****************/
+footer {
+  background-color: #f6f9f8;
+  position: relative;
+  margin-top: 0px;
+  z-index: 2;
+}
+
+.footer {
+  background-color: #0a3a60;
+  color: #fff;
+  padding: 30px;
+}
+.footer li {
+  list-style: none;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+.footer li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.footer .social {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.footer .social a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .title {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+.footer .address {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.footer .socials {
+  margin-left: 10px;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .copyright .powered, .footer .copyright .devcopy {
+  width: 350px;
+}
+.footer .copyright .powered {
+  text-align: right;
+}
+.footer .hello {
+  margin-left: -30px;
+}
+
+/********************************
+  Privacy policy page
+*********************************/
+#privacy {
+  position: relative;
+  margin-top: 40px;
+}
+
+/********************************
+  Terms and Conditions page
+*********************************/
+#terms {
+  position: relative;
+  margin-top: 40px;
+}
+
+/********************************
+            FAQs page
+*********************************/
+#faqs {
+  position: relative;
+  margin-top: 40px;
+}
+#faqs .card-header {
+  cursor: pointer;
+  background-color: #fff;
+}
+#faqs .btn-link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

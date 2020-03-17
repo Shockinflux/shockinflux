@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      #change{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px #ccc;
+        background-color: #ffff00;
+
+      }
+
+      #change::before{
+        content: "Hello World";
+        position: absolute;
+        top: 30px;
+        left : 30px;
+        color: #fff;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="" id="change">
+
+    </div>
+
+
+      <script type="text/javascript">
+
+
+        function chnageBack(id){
+
+          let div = document.getElementById(id);
+          let stage = 0;
+
+          function steps(){
+            let h = stage.toString(16)
+            div.style.backgroundColor = "#f"+h+"ba" + h + h;
+
+            if(stage < 9){
+              stage +=1;
+              setTimeout(steps,500);
+            }else {
+              stage  = 0;
+              setTimeout(steps,500);
+            }
+            // console.log(stage);
+
+
+          }
+
+          setTimeout(steps,500);
+        }
+
+        chnageBack('change');
+      </script>
+  </body>
+</html>

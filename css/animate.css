@@ -1,0 +1,61 @@
+.bouncer{
+   animation-name:bounce;
+   animation-timing-function:ease;
+}
+
+.bounce{
+   animation-name:bounceball;
+   animation-timing-function:ease;
+}
+.device{
+   animation-name:device;
+   animation-timing-function:ease;
+}
+
+.anime{
+  animation-name:bannerImg;
+  animation-timing-function:ease-in;
+
+}
+
+
+@keyframes bannerImg {
+
+  100%{background-image: url("../mockup/deckman2.png");}
+}
+
+
+@keyframes bounce{
+0%{transform:scale(1,1) translateY(0);}
+10%{transform:scale(1.1,.9) translateY(0);}
+30%{transform:scale(.9,1.1) translateY(-70px) rotateZ(-20deg);}
+50%{transform:scale(1.1,.9) translateY(0);}
+60%{transform:scale(.9,1.1) translateY(-70px) rotateZ(20deg);}
+80%{transform:scale(1.1,.9) translateY(0);}
+100%{transform:scale(1,1) translateY(0);}
+}
+
+@keyframes bounceball{
+0%{transform:scale(1,1) translateY(0);}
+10%{transform:scale(1.1,.9) translateY(0);}
+30%{transform:scale(.9,1.1) translateY(0);}
+50%{transform:scale(1.1,.9) translateY(0);}
+60%{transform:scale(.9,1.1) translateY(0);}
+80%{transform:scale(1.1,.9) translateY(0);}
+100%{transform:scale(.9,1.1) translateY(0);}
+}
+
+@keyframes device{
+0%{transform:translateY(0);}
+10%{transform:translateY(-10px);}
+/* 20%{transform:translateX(-20px);} */
+30%{transform:translateY(0px);}
+/* 40%{transform:translateX(40px);} */
+50%{transform:translateY(10px);}
+/* 60%{transform:translateX(-50px);} */
+70%{transform:translateY(0px);}
+/* 80%{transform:translateX(30px);} */
+/* 90%{transform:translateY(-20px);} */
+/* 95%{transform:translateX(-10px);} */
+/* 100%{transform:translateY(0);} */
+}

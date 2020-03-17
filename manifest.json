@@ -1,0 +1,14 @@
+{
+  "name": "Shockinflux",
+  "short_name": "Shockinflux",
+  "description": "Research based financial solutions.",
+  "start_url": "/",
+  "background_color": "#fff",
+  "theme_color": "#0A3A60",
+  "display":"standalone",
+  "icons": [{
+    "src": "./img/logo/sh_b.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
